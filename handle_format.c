@@ -23,6 +23,12 @@ int handle_format(const char **format, va_list args)
         case '%':
             f = handle_percent;
             break;
+        case 'd':
+            f = handle_d;
+            break;
+        case 'i':
+            f = handle_i;
+            break;
         default:
             f = NULL;
     }
