@@ -23,5 +23,5 @@ int handle_s(va_list args)
 	i++;
 	}
 	}
-	(return printed_chars);
+	return (printed_chars);
 }
