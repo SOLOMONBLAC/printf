@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Volumes/Seagate_Haykay/All_C_Programming/alx-low_level_programming/printf/handle_number.c
+main.h
+/Volumes/Seagate_Haykay/All_C_Programming/alx-low_level_programming/printf/main.h
+
+/Volumes/Seagate_Haykay/All_C_Programming/alx-low_level_programming/printf/main.h
+stdarg.h
+-
+unistd.h
+-
+limits.h
+-
+
