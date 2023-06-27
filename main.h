@@ -15,5 +15,6 @@ int handle_percent(va_list args);
 int handle_d(va_list args);
 int handle_i(va_list args);
 int print_number(long int n);
+int handle_b(va_list args);
 
 #endif /* MAIN_H */
