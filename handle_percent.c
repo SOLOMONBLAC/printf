@@ -6,6 +6,7 @@
  *
  * Return: Number of characters printed
  */
+
 int handle_percent(va_list args)
 {
     (void)args;
