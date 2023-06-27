@@ -9,9 +9,10 @@
 
 int handle_d(va_list args)
 {
-    int n;
+	int n;
 
-    n = va_arg(args, int);
-    return (print_number(n));
+	n = va_arg(args, int);
+
+	return (print_number(n));
 }
 

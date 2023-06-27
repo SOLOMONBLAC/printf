@@ -9,30 +9,31 @@
  */
 int handle_format(const char **format, va_list args)
 {
-    int (*f)(va_list);
-    int count = 0;
+	int (*f)(va_list);
+	int count = 0;
 
-    switch (**format)
-    {
-        case 'c':
-            f = handle_c;
-            break;
-        case 's':
-            f = handle_s;
-            break;
-        case '%':
-            f = handle_percent;
-            break;
-        case 'd':
-            f = handle_d;
-            break;
-        case 'i':
-            f = handle_i;
-            break;
-        default:
-            f = NULL;
-    }
-    if (f)
-        count += f(args);
-    return (count);
+	switch (**format)
+	{
+		case 'c':
+			f = handle_c;
+			break;
+		case 's':
+			f = handle_s;
+			break;
+		case '%':
+			f = handle_percent;
+			break;
+		case 'd':
+			f = handle_d;
+			break;
+		case 'i':
+			f = handle_i;
+			break;
+		default:
+			f = NULL;
+	}
+	if (f)
+		count += f(args);
+
+	return (count);
 }
