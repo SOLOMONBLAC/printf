@@ -9,7 +9,7 @@
 
 int print_number(int n)
 {
-	int count;
+	int count, INT_MIN = 0;
 
 	count = 0;
 
