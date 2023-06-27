@@ -15,4 +15,3 @@ int handle_d(va_list args)
 
 	return (print_number(n));
 }
-

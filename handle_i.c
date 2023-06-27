@@ -9,7 +9,7 @@
 
 int handle_i(va_list args)
 {
-	int n;
+	long int n;
 
 	n = va_arg(args, int);
 
