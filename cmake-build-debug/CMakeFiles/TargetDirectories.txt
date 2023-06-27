@@ -1,3 +1,0 @@
-/Volumes/Seagate_Haykay/All_C_Programming/alx-low_level_programming/printf/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Volumes/Seagate_Haykay/All_C_Programming/alx-low_level_programming/printf/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Volumes/Seagate_Haykay/All_C_Programming/alx-low_level_programming/printf/cmake-build-debug/CMakeFiles/printf.dir
