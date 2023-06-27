@@ -10,7 +10,9 @@
 int handle_s(va_list args)
 {
     int printed_chars = 0;
-    char *s = va_arg(args, char *);
+    char *s;
+
+    s = va_arg(args, char *);
 
     if (s != NULL)
     {
@@ -22,5 +24,5 @@ int handle_s(va_list args)
             i++;
         }
     }
-    return printed_chars;
+    return (printed_chars);
 }
