@@ -6,28 +6,37 @@
  *
  * Return: number of characters printed
  */
-
-int print_number(int n)
+int print_number(long int n)
 {
-	int count, INT_MIN = 0;
+	int i = BUFF_SIZE - 2;
+	int is_negative = 0;
+	unsigned long int num;
+	char buffer[BUFF_SIZE];
 
-	count = 0;
+	if (n == 0)
+		buffer[i--] = '0';
 
-	if (n == INT_MIN)
+	buffer[BUFF_SIZE - 1] = '\0';
+	num = (unsigned long int)((n < 0) ? -n : n);
+	is_negative = (n < 0) ? 1 : 0;
+
+	if (num > INT_MAX)
 	{
-		write(1, "-2147483648", 11);
-		return (11);
+		buffer[i--] = '0';  /* Handle edge case where num exceeds INT_MAX */
 	}
-	if (n < 0)
+	else
 	{
-		write(1, "-", 1);
-		count++;
-		n = -n;
+		while (num > 0)
+		{
+			buffer[i--] = (num % 10) + '0';
+			num /= 10;
+		}
 	}
-	if (n / 10)
-		count += print_number(n / 10);
-	write(1, &"0123456789"[n % 10], 1);
-	count++;
 
-	return (count);
+	if (is_negative)
+		buffer[i--] = '-';
+
+	write(1, buffer + i + 1, BUFF_SIZE - i - 2);
+
+	return (BUFF_SIZE - i - 2);
 }

@@ -29,6 +29,9 @@ int handle_format(const char **format, va_list args)
 		case 'i':
 			f = handle_i;
 			break;
+		case 'b':
+			f = handle_b;
+			break;
 		default:
 			f = NULL;
 	}
